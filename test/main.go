@@ -1,8 +1,15 @@
 package main
 
-import "piscine/Quest07"
+import (
+	"fmt"
+	"piscine/checkpoint/level03"
+)
 
 func main() {
-	a := Quest07.SplitWhiteSpaces("Hello how are you?")
-	Quest07.PrintWordsTables(a)
+	fmt.Println(.CamelToSnakeCase("HelloWorld"))
+	fmt.Println(CamelToSnakeCase("helloWorld"))
+	fmt.Println(CamelToSnakeCase("camelCase"))
+	fmt.Println(CamelToSnakeCase("CAMELtoSnackCASE"))
+	fmt.Println(CamelToSnakeCase("camelToSnakeCase"))
+	fmt.Println(CamelToSnakeCase("hey2"))
 }

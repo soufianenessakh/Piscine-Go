@@ -2,7 +2,6 @@ package main
 
 import (
 	"os"
-	"strconv"
 	"github.com/01-edu/z01"
 )
 
@@ -16,7 +15,7 @@ func main() {
 			index = 1
 		}
 		for i := index; i <= len(arg); i++ {
-			err, num := strconv.Atoi(arg[i])
+			err, num :=Atoi(arg[i])
 			if err !=nil || num < 1 || num > 26 {
 				z01.PrintRune(' ')
 			}else if upper{
